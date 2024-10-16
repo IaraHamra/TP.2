@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@100..700&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    background-color: #E9EED9; 
+    color: #54473F;
+    line-height: 25px;
+    text-align: justify;
+}
+
+header {
+    padding: 10px 30px;
+    background-color: #54473F;
+    color: #E9EED9;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Mono", monospace;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.4em;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2, h3{
+    font-size: 1.8em;
+    line-height: 35px;
+}
+
+h3{
+    font-weight: 400;
+    text-align: center;
+}
+
+p, a {
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+main section h2 {
+    margin-top: 60px;
+}
+
+
+section {
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+
+
+a:link, a:visited {
+    color: #E9EED9;
+}
+a:hover {
+    background-color: #E9EED9;
+    color: #54473F;
+}
+
+
+section div{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div img{
+    width: 48%;
+}
+
+img{
+    box-sizing: border-box;
+    border: 1.5px solid #54473F;
+}
+
+div img:hover{
+    border-width: 10px;
+    width: 50%;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+[src="Images/man-6542646_1280.jpg"] {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+[src="Images/man-6542646_1280.jpg"]:hover{
+    width: 80%;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+footer {
+    width: 100%;
+    background-color: #54473F;
+    color: #E9EED9;
+    display: block;
+}
+
+
+
+@media (max-width:768px) {
+    body{font-size: 12px;}
+    div{width: 100%;}
+    h1, h2, h3, p{line-height: 15px;}
+}
